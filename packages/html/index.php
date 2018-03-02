@@ -12,8 +12,8 @@ $sites = array(
 	'card',
 	'the-last-experience',
 	'gravity-points',
-	'ribbons2'
-	'circles'
+	'ribbons2',
+	'circles',
 	'codevember-7-pillow'
 );
 
