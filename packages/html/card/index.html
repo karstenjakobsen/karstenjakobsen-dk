@@ -1,4 +1,12 @@
-@import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300";
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Karsten Kaj Jakobsen</title>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300";
 * {
   box-sizing: border-box;
 }
@@ -104,3 +112,41 @@ p {
     transform: scale(0.5) rotateY(-180deg) translateZ(1px);
   }
 }
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- The front is based on of my SVG link hover effect http://codepen.io/Zeaklous/pen/kyGqm -->
+<div class="container">
+
+  <div class="card">
+
+    <div class="front side">
+      <h1 class="logo">Karsten Kaj Jakobsen</h1>
+    </div>
+
+    <div class="back side">
+      <h3 class="name">Karsten Kaj Jakobsen</h3>
+      <div>VoIP and DevOps engineer</div>
+      <div class="info">
+        <p><span class="property">Email: </span>karsten@karstenjakobsen.dk</p>
+        <p><span class="property">Github: </span>github.com/karstenjakobsen</p>
+        <p><span class="property">Phone: </span>+45 3171 2929</p>
+        <p><span class="property">Website: </span>www.karstenjakobsen.dk</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="card/js/index.js"></script>
+
+</body>
+
+</html>
