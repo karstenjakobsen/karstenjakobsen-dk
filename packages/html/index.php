@@ -18,8 +18,11 @@ $sites = array(
 );
 
 // Require site data
-require_once $sites[rand(0, ( count($sites) - 1 ) ) ]."/index.html";
 
-echo "<!--- {$sites[rand(0, ( count($sites) - 1 ) ) ]} --->";
+$folder = $sites[rand(0, ( count($sites) - 1 ) ) ];
+
+require_once "{$folder}/index.html";
+
+echo "<!--- {$folder} --->";
 
 ?>
