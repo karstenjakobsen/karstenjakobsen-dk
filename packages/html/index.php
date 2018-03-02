@@ -8,7 +8,11 @@ if ( strpos( $_SERVER['HTTP_HOST'], 'futurebanana' ) !== false || $_SERVER['HTTP
 }
 
 // Set site array
-$sites = array('card','the-last-experience');
+$sites = array(
+	'card',
+	'the-last-experience',
+	'gravity-points'
+);
 
 // Require site data
 require_once $sites[rand(0,1)]."/index.html";
