@@ -20,6 +20,6 @@ $sites = array(
 // Require site data
 require_once $sites[rand(0, ( count($sites) - 1 ) ) ]."/index.html";
 
-echo "<!--- $sites[rand(0, ( count($sites) - 1 ) ) ] --->";
+echo "<!--- {$sites[rand(0, ( count($sites) - 1 ) ) ]} --->";
 
 ?>
