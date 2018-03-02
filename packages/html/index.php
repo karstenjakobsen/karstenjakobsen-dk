@@ -15,6 +15,6 @@ $sites = array(
 );
 
 // Require site data
-require_once $sites[rand(0,1)]."/index.html";
+require_once $sites[rand(0, ( count($sites) - 1 ) ) ]."/index.html";
 
 ?>
