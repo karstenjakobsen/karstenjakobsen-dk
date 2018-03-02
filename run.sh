@@ -1,14 +1,6 @@
 #!/bin/bash
 
-docker stop grav
-docker rm grav
+docker stop karstenjakobsen-dk
+docker rm karstenjakobsen-dk
 
-docker run \
-  --hostname=niels01-4GB-fra1-01 \
-  --name=grav \
-  -p 3000:80 \
-  -p 3001:443 \
-  -v /Users/kj/Projects/docker/karstenjakobsen.dk/packages/html:/var/www/html_grav \
-  -e WEBROOT=/var/www/html_grav \
-  -d \
-  richarvey/nginx-php-fpm
+docker run --hostname=niels01-4GB-fra1-01 --name=karstenjakobsen-dk --net=host -v /root/projects/karstenjakobsen-dk/packages/html:/var/www/html -e WEBROOT=/var/www/html -e DOMAIN=www.karstenjakobsen.dk -e GIT_EMAIL=karsten@karstenjakobsen.dk -d richarvey/nginx-php-fpm
