@@ -9,12 +9,12 @@ if ( strpos( $_SERVER['HTTP_HOST'], 'futurebanana' ) !== false || $_SERVER['HTTP
 
 // Set site array
 $sites = array(
-	'card',
-	'the-last-experience',
-	'gravity-points',
-	'ribbons2',
-	'circles',
-	'codevember-7-pillow'
+	'card'
+	//'the-last-experience',
+	//'gravity-points',
+	//'ribbons2',
+	//'circles',
+	//'codevember-7-pillow'
 );
 
 // Require site data
